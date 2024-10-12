@@ -6,6 +6,20 @@ const resultParagraph = document.getElementById('result');
 calculateButton.addEventListener('click', () => {
     const quantity = parseInt(quantityInput.value);
     const productPrice = parseFloat(productSelect.value);
+
+    if (isNaN(quantity) || quantity <= 0) {
+        displayError('Введите корректное количество');
+        return;
+    }
+
+    if (isNaN(productPrice) || productPrice <= 0) {
+        displayError('Выберите продукт');
+        return;
+    }
+
     const cost = quantity * productPrice;
-    resultParagraph.textContent = `The cost of the order is: $${cost.toFixed(2)}`;
+    resultParagraph.textContent = `Цена заказа: ₽${cost.toFixed(2)}`;
 });
+function displayError(message) {
+    resultParagraph.textContent = `Ошибка: ${message}`;
+}

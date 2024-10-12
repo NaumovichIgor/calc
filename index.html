@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>calc</title>
+    <title>калькулятор стоимости заказа</title>
 <script>
     function onClick(event) {
        event.preventDefault();
@@ -36,29 +36,19 @@
 </head>
 <body>
 <div>
-    <label for="quantity">Quantity:</label>
+    <label for="quantity">Количество:</label>
     <input type="number" id="quantity">
     <br>
-    <label for="product">Product:</label>
+    <label for="product">Товар:</label>
     <select id="product">
-        <option value="10">Product A ($10)</option>
-        <option value="20">Product B ($20)</option>
-        <option value="30">Product C ($30)</option>
+        <option value="100">Товар 1 (₽100)</option>
+        <option value="200">Товар 2 (₽200)</option>
+        <option value="500">Товар 3 (₽500)</option>
     </select>
     <br>
-    <button id="calculate">Calculate Cost</button>
+    <button id="calculate">Посчитать цену</button>
     <p id="result"></p>
 </div>
 <div id="result1"></div>
-<form>
-    <input name="field1" type="text">
-    <input name="field2" type="text">
-    <select name="select1">
-        <option value="v1">Вариант 1</option>
-        <option value="v2">Вариант 2</option>
-    </select>
-    <button id="button1" onclick="return click1();">OK</button>
-</form>
-<button id="my-button">Кнопка</button>
 </body>
 </html>
