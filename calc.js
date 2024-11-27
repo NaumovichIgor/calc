@@ -1,9 +1,9 @@
-const quantityInput = document.getElementById('quantity');
-const productSelect = document.getElementById('product');
-const calculateButton = document.getElementById('calculate');
-const resultParagraph = document.getElementById('result');
 window.addEventListener('DOMContentLoaded', function (event) {
     console.log("DOM fully loaded and parsed");
+    const quantityInput = document.getElementById('quantity');
+    const productSelect = document.getElementById('product');
+    const calculateButton = document.getElementById('calculate');
+    const resultParagraph = document.getElementById('result');
  })
 
 calculateButton.addEventListener('click', () => {
