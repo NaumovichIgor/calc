@@ -2,10 +2,6 @@ const quantityInput = document.getElementById('quantity');
 const productSelect = document.getElementById('product');
 const calculateButton = document.getElementById('calculate');
 const resultParagraph = document.getElementById('result');
-function onClick(event) {
-    event.preventDefault();
-    alert("click");
- }
 window.addEventListener('DOMContentLoaded', function (event) {
     console.log("DOM fully loaded and parsed");
  })
